@@ -1,8 +1,10 @@
 var express = require('express'),
 	app = express();
 
+const PORT = process.env.PORT || 3000;
+
 app.use(express.static("public"));
 
-app.listen(3000 || process.env.PORT, function(){
+app.listen(PORT, function(){
 	console.log("Server started");
 });
